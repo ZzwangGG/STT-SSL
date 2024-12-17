@@ -10,8 +10,8 @@ debug: False
 data_dir: data
 dataset: PEMS04-12
 input_length: 12 # 4+5*3
-batch_size: 1
-test_batch_size: 1
+batch_size: 32
+test_batch_size: 32
 graph_file: data/PEMS04-12/adj_mx.npz # 170 x 170
 
 ## model
