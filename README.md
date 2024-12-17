@@ -23,8 +23,8 @@ torch==1.10.1
 
 If the environment is ready, please run the following commands to train model on the specific dataset from `{PeMS04/PeMS08/PeMS-BAY/METR-LA}`.
 ```bash
->> cd ST-SSL
->> ./runme 0 PEMS04-12   # 0 gives the gpu id
+>> cd STT-SSL
+>> ./runme 0 PEMS08-12   # 0 gives the gpu id
 ```
 
 
