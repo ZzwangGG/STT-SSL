@@ -1,0 +1,34 @@
+## global
+seed: 31
+device: cuda
+mode: train
+best_path: None
+debug: False
+
+## data
+data_dir: data
+dataset: PEMS08-9
+input_length: 12 # 4+5*3
+batch_size: 12
+test_batch_size: 12
+graph_file: data/PEMS08-9/adj_mx.npz # 170 x 170
+
+## model
+d_input: 1                  # means inflow and outflow
+d_output: 1                 # means inflow and outflow
+d_model: 64
+dropout: 0.2
+percent: 0.1                # augumentation percentage
+shm_temp: 0.5               # temperature for loss of spatial heterogeneity modeling  , 0.5 is best for NYCBike T-SSL0.6
+nmb_prototype: 6            # number of cluster  6 T-SSL:8
+yita: 0.6                   # balance for inflow loss and outflow loss, $yita * inflow + (1 - yita) * outflow$
+
+## train
+epochs: 50
+lr_init: 0.001
+early_stop: True
+early_stop_patience: 10
+grad_norm: True
+max_grad_norm: 5
+use_dwa: True         # whether to use dwa for loss balance
+temp: 4               # tempurature parameter in dwa, a larger T means more similer weights
