@@ -1,0 +1,17 @@
+# 忽略 JetBrains IDE 配置文件
+.idea/
+
+# 忽略 Python 编译文件
+__pycache__/
+*.pyc
+
+# 忽略数据文件
+data/
+*.npz
+
+# 忽略日志文件
+*.log
+
+# 忽略系统生成文件
+.DS_Store
+Thumbs.db
