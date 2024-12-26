@@ -1,6 +1,6 @@
-## ST-SSL: Spatio-Temporal Self-Supervised Learning for Traffic Prediction 
+## Self-supervised Learning Frame work Based on Spatiotemporal Transformer for Long-term Traffic Forecasting
 
-Specifically, we design a spatiotemporal Transformermodule that leveragesamulti-headattentionmechanismtoaddress the
+Specifically, we design a spatiotemporal Transformer module that leveragesamulti-headattentionmechanismtoaddress the
 limitationsoftraditionalsequentialmodelsinhandlinglong-term memory. Thismodulemodels spatial dependencies fromboth
 fixedanddynamicperspectives,allowingcomprehensivecapture ofcomplexspatial features.Toovercomethe incompletefeature
 representationof trafficdataandenhancemodelrobustness,we implement adaptivegraphaugmentationtodynamicallyadjust
